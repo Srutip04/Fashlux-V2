@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Bigelow Rules', cursive;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 code {
@@ -12,10 +14,11 @@ code {
     monospace;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
-*{
+
+* {
   box-sizing: border-box;
 }
