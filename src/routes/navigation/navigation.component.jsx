@@ -3,6 +3,8 @@ import { Link, Outlet } from "react-router-dom";
 import {ReactComponent as Logo}  from '../../assets/crown (1).svg'
 import './naviagtion.styles.scss'
 const Navigation = () =>{
+  return(
+
   <Fragment>
       <div className="navigation">
           <Link className="logo-container" to='/'>
@@ -14,7 +16,9 @@ const Navigation = () =>{
               </Link>
           </div>
       </div>
+      <Outlet />
   </Fragment>
+  )
 }
 
 export default Navigation;
