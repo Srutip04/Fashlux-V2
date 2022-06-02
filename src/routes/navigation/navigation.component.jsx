@@ -4,10 +4,12 @@ import {ReactComponent as Logo}  from '../../assets/crown (1).svg';
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
 import { UserContext } from "../../contexts/user.context";
+import { CartContext, CartProvider } from "../../contexts/cart.context";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 import './naviagtion.styles.scss'
 const Navigation = () =>{
   const {currentUser} = useContext(UserContext);
+  const {isCartOpen} = useContext(CartContext)
   console.log(currentUser);
 
 
@@ -32,7 +34,7 @@ const Navigation = () =>{
           )}
           <CartIcon />
         </div>
-        <CartDropdown />
+       {isCartOpen && <CartDropdown />}
       </div>
       <Outlet />
     </Fragment>
