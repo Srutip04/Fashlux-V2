@@ -13,12 +13,17 @@ const Category = () =>{
      setProducts(categoriesMap[category]);
  },[category,categoriesMap])
  return (
-     <div className='category-container'>
-         {   products &&
-             products.map((product) => <ProductCard key={product.id} product={product} />)
-         }
+   <>
+     {" "}
+     <h2 className="category-title">{category.toUpperCase()}</h2>
+     <div className="category-container">
+       {products &&
+         products.map((product) => (
+           <ProductCard key={product.id} product={product} />
+         ))}
      </div>
- )
+   </>
+ );
 }
 
 export default Category;
