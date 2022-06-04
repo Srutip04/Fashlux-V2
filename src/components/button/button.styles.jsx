@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const BaseButton = styled.button`
-  min-width: 165px;
+  min-width: 200px;
   width: auto;
   height: 50px;
-  letter-spacing: 0.5px;
+  // letter-spacing: 0.5px;
   line-height: 50px;
-  padding: 0 35px 0 35px;
+  // padding: 0 35px 0 35px;
   font-size: 15px;
   background-color: black;
   color: white;
@@ -17,6 +17,7 @@ export const BaseButton = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
+  margin: 10px 10px 10px 0;
 
    &:hover {
     background-color: white;
