@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import FormInput from "../form-input/form-input.component";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
+import {FcGoogle} from 'react-icons/fc';
 
 import {
   signInAuthUserWithEmailAndPassword,
@@ -73,7 +74,7 @@ const SignInForm = () => {
             type="button"
             onClick={signInWithGoogle}
           >
-            Sign In With Google
+           <FcGoogle/> Google
           </Button>
         </ButtonsContainer>
       </form>
